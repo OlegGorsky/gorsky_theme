@@ -1,0 +1,9 @@
+{
+    "name": "Theme Gorsky",
+    "description": "GorskyApp",
+    "author": "Your Name",
+    "license": "MIT",
+    "tooltips": {
+        "+main": "The main content of the page"
+    }
+}
