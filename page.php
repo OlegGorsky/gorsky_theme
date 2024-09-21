@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@{ title | def('Default Title') }</title>
+    <!-- Удалён <title> -->
     <@ stylesheets @>
+    <style>
+        /* Стили для центрирования содержимого */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        main {
+            width: 100%;
+            max-width: 800px; /* Ограничиваем ширину */
+        }
+    </style>
 </head>
 <body>
     <main>
-        <h1>@{ title }</h1>
-        <!-- Основной контент страницы -->
+        <!-- Основной контент страницы, центрированный по вертикали и горизонтали -->
         @{ +main }
     </main>
     <@ scripts @>
