@@ -1,15 +1,17 @@
-<section class="section">
-	<div class="container">
-		<div class="columns is-8 is-variable">
-			<main class="column is-three-quarters content">
-				<h1 class="am-block title">
-					@{ title }
-				</h1>
-				@{ +main }
-			</main>
-			<nav class="column is-one-quater">
-				<@ elements/menu.php @>
-			</nav>
-		</div>
-	</div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@{ title | def('Default Title') }</title>
+    <@ stylesheets @>
+</head>
+<body>
+    <main>
+        <h1>@{ title }</h1>
+        <!-- Основной контент страницы -->
+        @{ +main }
+    </main>
+    <@ scripts @>
+</body>
+</html>
