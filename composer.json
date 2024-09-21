@@ -1,10 +1,17 @@
 {
-    "name": "automad/gorsky",
+    "name": "oleg-gorsky/gorsky-theme",
     "description": "GorskyApp",
     "type": "automad-package",
-    "keywords": ["theme"],
+    "keywords": ["theme", "cms"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Gorsky",
+            "email": "my@gorskymail.ru"
+        }
+    ],
     "require": {
+        "php": ">=7.4",
         "automad/package-installer": "^1.1 || dev-master"
     },
     "config": {
